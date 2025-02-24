@@ -54,6 +54,10 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	{
 		enhancedInputCompnent->BindAction(_moveAction, ETriggerEvent::Triggered, this, &AMyCharacter::Move);
 		enhancedInputCompnent->BindAction(_lookAction, ETriggerEvent::Triggered, this, &AMyCharacter::Look);
+
+		// 점프 바인딩 추가
+		enhancedInputComponent->BindAction(_jumpAction, ETriggerEvent::Started, this, &AMyCharacter::StartJump);
+		enhancedInputComponent->BindAction(_jumpAction, ETriggerEvent::Completed, this, &AMyCharacter::StopJump);
 	}
 }
 
@@ -84,5 +88,27 @@ void AMyCharacter::Look(const FInputActionValue& value)
 	if (Controller != nullptr)
 	{
 		AddControllerYawInput(lookAxisVector.X);
+	}
+}
+
+// 점프 중인지 확인하는 변수
+bool bIsJumping = false;
+// 점프 시작 함수
+void AMyCharacter::StartJump(const FInputActionValue& Value)
+{
+	if (!bIsJumping)
+	{
+		bIsJumping = true;
+		Jump();  // 점프 시작
+	}
+}
+
+// 점프 종료 함수
+void AMyCharacter::StopJump(const FInputActionValue& Value)
+{
+	if (bIsJumping)
+	{
+		bIsJumping = false;
+		StopJumping();  // 점프 멈춤
 	}
 }

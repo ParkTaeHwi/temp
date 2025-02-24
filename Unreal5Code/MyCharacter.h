@@ -30,6 +30,8 @@ public:
 	void Look(const struct FInputActionValue& value);
 
 	//virtual void Jump() override;	// todo 점프구현하기
+	void StartJump(const struct FInputActionValue& value);
+	void StopJump(const struct FInputActionValue& value);
 
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
@@ -46,4 +48,17 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
 	float _speed = 10.0f;
+
+	// jump
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
+	class UInputAction* _jumpAction;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
+	bool bIsJumping = false;  // 점프 상태 추적
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input", meta = (AllowPrivateAccess = "true"))
+	float JumpHeight = 600.0f;  // 점프 높이
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input", meta = (AllowPrivateAccess = "true"))
+	float JumpSpeed = 10.0f;  // 점프 속도 (필요에 따라 조정)
 };

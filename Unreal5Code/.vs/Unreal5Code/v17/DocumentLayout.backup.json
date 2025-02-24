@@ -1,54 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\",
+  "WorkspaceRootPath": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyAnimInstance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyAnimInstance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyAnimInstance.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyAnimInstance.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoPawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyTutoPawn.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoActor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyTutoActor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyPlayerController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyPlayerController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyGameModeBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyGameModeBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoPawn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyTutoPawn.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoActor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyTutoActor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyPlayerController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyPlayerController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyGameModeBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyGameModeBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,152 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MyCharacter.cpp",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyCharacter.cpp",
-              "RelativeDocumentMoniker": "MyCharacter.cpp",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyCharacter.cpp",
-              "RelativeToolTip": "MyCharacter.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-24T04:39:33.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MyCharacter.h",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyCharacter.h",
-              "RelativeDocumentMoniker": "MyCharacter.h",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyCharacter.h",
-              "RelativeToolTip": "MyCharacter.h",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwDAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-24T04:39:14.743Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MyAnimInstance.cpp",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyAnimInstance.cpp",
+              "DocumentMoniker": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.cpp",
               "RelativeDocumentMoniker": "MyAnimInstance.cpp",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyAnimInstance.cpp",
+              "ToolTip": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.cpp",
               "RelativeToolTip": "MyAnimInstance.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-24T04:25:35.685Z"
+              "WhenOpened": "2025-02-24T15:53:52.937Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MyAnimInstance.h",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyAnimInstance.h",
+              "DocumentMoniker": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.h",
               "RelativeDocumentMoniker": "MyAnimInstance.h",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyAnimInstance.h",
+              "ToolTip": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.h",
               "RelativeToolTip": "MyAnimInstance.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-24T04:25:07.608Z"
+              "WhenOpened": "2025-02-24T15:53:52.371Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MyTutoPawn.cpp",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoPawn.cpp",
-              "RelativeDocumentMoniker": "MyTutoPawn.cpp",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoPawn.cpp",
-              "RelativeToolTip": "MyTutoPawn.cpp",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAQwFwAAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MyCharacter.cpp",
+              "DocumentMoniker": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.cpp",
+              "RelativeDocumentMoniker": "MyCharacter.cpp",
+              "ToolTip": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.cpp",
+              "RelativeToolTip": "MyCharacter.cpp",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwv10AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-21T04:45:46.418Z"
+              "WhenOpened": "2025-02-24T15:53:51.738Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MyTutoActor.cpp",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoActor.cpp",
-              "RelativeDocumentMoniker": "MyTutoActor.cpp",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoActor.cpp",
-              "RelativeToolTip": "MyTutoActor.cpp",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwDEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-21T04:45:31.55Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MyPlayerController.cpp",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyPlayerController.cpp",
-              "RelativeDocumentMoniker": "MyPlayerController.cpp",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyPlayerController.cpp",
-              "RelativeToolTip": "MyPlayerController.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-21T04:45:17.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MyGameModeBase.cpp",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyGameModeBase.cpp",
-              "RelativeDocumentMoniker": "MyGameModeBase.cpp",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyGameModeBase.cpp",
-              "RelativeToolTip": "MyGameModeBase.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-21T04:45:11.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MyTutoPawn.h",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoPawn.h",
-              "RelativeDocumentMoniker": "MyTutoPawn.h",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoPawn.h",
-              "RelativeToolTip": "MyTutoPawn.h",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwDEAAAACAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MyCharacter.h",
+              "DocumentMoniker": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.h",
+              "RelativeDocumentMoniker": "MyCharacter.h",
+              "ToolTip": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.h",
+              "RelativeToolTip": "MyCharacter.h",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvz0AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-21T04:44:53.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MyTutoActor.h",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoActor.h",
-              "RelativeDocumentMoniker": "MyTutoActor.h",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyTutoActor.h",
-              "RelativeToolTip": "MyTutoActor.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAQwCoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-21T04:44:30.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MyPlayerController.h",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyPlayerController.h",
-              "RelativeDocumentMoniker": "MyPlayerController.h",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyPlayerController.h",
-              "RelativeToolTip": "MyPlayerController.h",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAQwBYAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-21T04:43:54.685Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MyGameModeBase.h",
-              "DocumentMoniker": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyGameModeBase.h",
-              "RelativeDocumentMoniker": "MyGameModeBase.h",
-              "ToolTip": "C:\\Users\\hwixi\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Unreal5Code\\MyGameModeBase.h",
-              "RelativeToolTip": "MyGameModeBase.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-21T04:43:27.86Z"
+              "WhenOpened": "2025-02-24T15:53:51.106Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             }
           ]
         }
