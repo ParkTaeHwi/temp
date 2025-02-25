@@ -7,8 +7,15 @@
 #include "MyAnimInstance.generated.h"
 
 /**
- *
+ * 
  */
+
+DECLARE_DELEGATE(AnimDelegateTest);	//void(void)
+
+DECLARE_DELEGATE_RetVal_TwoParams(int32, AnimDelegateTest2, int32, int32);	//int(int)
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FAnimDelegateTest3);
+
 UCLASS()
 class SUMS2_API UMyAnimInstance : public UAnimInstance
 {
@@ -16,10 +23,25 @@ class SUMS2_API UMyAnimInstance : public UAnimInstance
 
 public:
 	UMyAnimInstance();
-
+	
 	virtual void NativeUpdateAnimation(float DelatSeconds);
+	
+	UFUNCTION()
+	void PlayAnimMontage();
+
+	AnimDelegateTest _attackStart;
+	AnimDelegateTest2 _attackStart2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pawn", meta = (AllowPrivateAccess = "true"))
+	FAnimDelegateTest3 _attackStart3;
 
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pawn", meta = (AllowPrivateAccess = "true"))
 	float _speed = 0.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pawn", meta = (AllowPrivateAccess = "true"))
+	bool _isFalling;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AniMontage", meta = (AllowPrivateAccess = "true"))
+	class UAnimMontage* _animMontage;
 };

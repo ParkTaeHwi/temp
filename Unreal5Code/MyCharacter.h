@@ -19,19 +19,30 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:
+public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION()
 	void Move(const struct FInputActionValue& value);
+	UFUNCTION()
 	void Look(const struct FInputActionValue& value);
+	UFUNCTION()
+	void JumpA(const struct FInputActionValue& value);
+	UFUNCTION()
+	void Attack(const struct FInputActionValue& value);
 
-	//virtual void Jump() override;	// todo 점프구현하기
-	void StartJump(const struct FInputActionValue& value);
-	void StopJump(const struct FInputActionValue& value);
+	UFUNCTION()
+	void TestDelegate();
+
+	UFUNCTION()
+	int32 TestDelegate2(int32 a, int32 b);
+
+	UFUNCTION()
+	void AttackEnd(class UAnimMontage* Montage, bool bInterrupted);
 
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
@@ -41,24 +52,23 @@ private:
 	class UInputAction* _lookAction;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
-	class UCameraComponent* _camera;
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* _springArm;
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
-	float _speed = 10.0f;
-
-	// jump
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
 	class UInputAction* _jumpAction;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
-	bool bIsJumping = false;  // 점프 상태 추적
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
+	class UInputAction* _attackAction;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input", meta = (AllowPrivateAccess = "true"))
-	float JumpHeight = 600.0f;  // 점프 높이
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
+	class UCameraComponent* _camera;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input", meta = (AllowPrivateAccess = "true"))
-	float JumpSpeed = 10.0f;  // 점프 속도 (필요에 따라 조정)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
+	class USpringArmComponent* _springArm;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Stat", meta = (AllowPrivateAccess = "true"))
+	float _speed = 10.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Animation", meta = (AllowPrivateAccess = "true"))
+	bool _isAttack;
+
+	UPROPERTY()
+	class UMyAnimInstance* _animInstance;
 };

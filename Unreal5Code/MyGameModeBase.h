@@ -7,7 +7,7 @@
 #include "MyGameModeBase.generated.h"
 
 /**
- *
+ * 
  */
 UCLASS()
 class SUMS2_API AMyGameModeBase : public AGameModeBase

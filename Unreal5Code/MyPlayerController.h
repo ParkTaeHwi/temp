@@ -7,7 +7,7 @@
 #include "MyPlayerController.generated.h"
 
 /**
- *
+ * 
  */
 UCLASS()
 class SUMS2_API AMyPlayerController : public APlayerController

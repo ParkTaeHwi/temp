@@ -3,12 +3,14 @@
 
 #include "MyGameModeBase.h"
 #include "MyTutoPawn.h"
+#include "MyCharacter.h"
 
 AMyGameModeBase::AMyGameModeBase()
 {
 	// BluePrint Class Type을 가져올 때 _C를 붙혀야한다.
-	static ConstructorHelpers::FClassFinder<AMyTutoPawn> pawn
-	(TEXT("/Script/Engine.Blueprint'/Game/BluePrints/BP_MyTutoPawn.BP_MyTutoPawn_C'"));
+	//static ConstructorHelpers::FClassFinder<AMyTutoPawn> pawn	
+	static ConstructorHelpers::FClassFinder<AMyCharacter> pawn	
+	(TEXT("C:/UE_PTH/SumS2/SumS2/Content/ParagonLtBelica/Characters/Heroes/Belica/LtBelica_AnimBlueprint.uasset_C"));
 
 	if (pawn.Succeeded())
 	{

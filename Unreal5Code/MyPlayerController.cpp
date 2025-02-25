@@ -9,11 +9,11 @@ void AMyPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	UEnhancedInputLocalPlayerSubsystem* subSystem =
+	UEnhancedInputLocalPlayerSubsystem* subSystem = 
 		ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(GetLocalPlayer());
 
 	if (subSystem)
 	{
-		subSystem->AddMappingContext(_inputMappingContext, 0);
+		subSystem->AddMappingContext(_inputMappingContext,0);
 	}
 }

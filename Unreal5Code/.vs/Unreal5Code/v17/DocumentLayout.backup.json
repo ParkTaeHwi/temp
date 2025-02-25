@@ -1,22 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\",
+  "WorkspaceRootPath": "C:\\PARKTAEHWI\\temp\\Unreal5Code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SGA\\Desktop\\Public\\MyAnimInstance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyAnimInstance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyAnimInstance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyAnimInstance.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyAnimInstance.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyCharacter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A6F8026-E508-468C-BCA8-C0E8602CC2DA}|Unreal5Code.vcxproj|solutionrelative:MyCharacter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,41 +29,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MyAnimInstance.cpp",
-              "DocumentMoniker": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.cpp",
-              "RelativeDocumentMoniker": "MyAnimInstance.cpp",
-              "ToolTip": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.cpp",
-              "RelativeToolTip": "MyAnimInstance.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-24T15:53:52.937Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "MyAnimInstance.h",
-              "DocumentMoniker": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.h",
+              "DocumentMoniker": "C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyAnimInstance.h",
               "RelativeDocumentMoniker": "MyAnimInstance.h",
-              "ToolTip": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyAnimInstance.h",
+              "ToolTip": "C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyAnimInstance.h",
               "RelativeToolTip": "MyAnimInstance.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-02-24T15:53:52.371Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MyAnimInstance.cpp",
+              "DocumentMoniker": "C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyAnimInstance.cpp",
+              "RelativeDocumentMoniker": "MyAnimInstance.cpp",
+              "ToolTip": "C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyAnimInstance.cpp",
+              "RelativeToolTip": "MyAnimInstance.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-24T15:53:52.937Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyCharacter.h",
+              "DocumentMoniker": "C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyCharacter.h",
+              "RelativeDocumentMoniker": "MyCharacter.h",
+              "ToolTip": "C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyCharacter.h",
+              "RelativeToolTip": "MyCharacter.h",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvz0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-24T15:53:51.106Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MyCharacter.cpp",
-              "DocumentMoniker": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.cpp",
+              "DocumentMoniker": "C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyCharacter.cpp",
               "RelativeDocumentMoniker": "MyCharacter.cpp",
-              "ToolTip": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.cpp",
+              "ToolTip": "C:\\PARKTAEHWI\\temp\\Unreal5Code\\MyCharacter.cpp",
               "RelativeToolTip": "MyCharacter.cpp",
               "ViewState": "AgIAAD0AAAAAAAAAAADwv10AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -70,15 +88,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MyCharacter.h",
-              "DocumentMoniker": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.h",
-              "RelativeDocumentMoniker": "MyCharacter.h",
-              "ToolTip": "C:\\abcdefg_Hwi\\temp\\Unreal5Code\\MyCharacter.h",
-              "RelativeToolTip": "MyCharacter.h",
-              "ViewState": "AgIAABkAAAAAAAAAAADwvz0AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-02-24T15:53:51.106Z",
-              "IsPinned": true,
+              "Title": "MyAnimInstance.cpp",
+              "DocumentMoniker": "C:\\Users\\SGA\\Desktop\\Public\\MyAnimInstance.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\SGA\\Desktop\\Public\\MyAnimInstance.cpp",
+              "ToolTip": "C:\\Users\\SGA\\Desktop\\Public\\MyAnimInstance.cpp",
+              "RelativeToolTip": "..\\..\\..\\Users\\SGA\\Desktop\\Public\\MyAnimInstance.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-25T03:57:33.371Z",
               "EditorCaption": ""
             }
           ]
