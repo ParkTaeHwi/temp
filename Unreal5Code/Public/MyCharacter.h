@@ -19,7 +19,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -44,6 +44,16 @@ public:
 	UFUNCTION()
 	void AttackEnd(class UAnimMontage* Montage, bool bInterrupted);
 
+	float My_Vertical() { return _vertical; }
+	float My_Horizontal() { return _horizontal; }
+
+	
+	void Attack_Hit();
+
+	void AddHp(float amount);
+
+	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
+
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
 	class UInputAction* _moveAction;
@@ -63,12 +73,18 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Camera", meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* _springArm;
 
+	UPROPERTY()
+	class UMyAnimInstance* _animInstance;
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Stat", meta = (AllowPrivateAccess = "true"))
-	float _speed = 10.0f;
+	class UMyStatComponent* _statComponent;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Animation", meta = (AllowPrivateAccess = "true"))
 	bool _isAttack;
 
-	UPROPERTY()
-	class UMyAnimInstance* _animInstance;
+	int32 _curAttackSection = 1;
+
+	float _vertical = 0.0f;
+	float _horizontal = 0.0f;
+
 };

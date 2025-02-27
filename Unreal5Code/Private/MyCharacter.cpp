@@ -14,10 +14,14 @@
 
 #include "MyAnimInstance.h"
 
+#include "Engine/DamageEvents.h"
+
+#include "MyStatComponent.h"
+
 // Sets default values
 AMyCharacter::AMyCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	GetMesh()->SetRelativeLocationAndRotation(FVector(0.0f, 0.0f, -88.0f), FRotator(0.0f, -90.0f, 0.0f));
@@ -29,7 +33,9 @@ AMyCharacter::AMyCharacter()
 	_camera->SetupAttachment(_springArm);
 
 	_springArm->TargetArmLength = 500.0f;
-	_springArm->SetRelativeRotation(FRotator(-35.0f,0.0f,0.0f));
+	_springArm->SetRelativeRotation(FRotator(-35.0f, 0.0f, 0.0f));
+
+	_statComponent = CreateDefaultSubobject<UMyStatComponent>(TEXT("Stat"));
 }
 
 // Called when the game starts or when spawned
@@ -45,6 +51,7 @@ void AMyCharacter::BeginPlay()
 	_animInstance->_attackStart2.BindUObject(this, &AMyCharacter::TestDelegate2);
 	_animInstance->_attackStart3.AddDynamic(this, &AMyCharacter::TestDelegate);
 	_animInstance->OnMontageEnded.AddDynamic(this, &AMyCharacter::AttackEnd);
+	_animInstance->_hitEvent.AddUObject(this, &AMyCharacter::Attack_Hit);
 }
 
 // Called every frame
@@ -83,8 +90,11 @@ void AMyCharacter::Move(const FInputActionValue& value)
 			FVector forWard = GetActorForwardVector();
 			FVector right = GetActorRightVector();
 
-			AddMovementInput(forWard, moveVector.Y * _speed);
-			AddMovementInput(right, moveVector.X * _speed);
+			_vertical = moveVector.Y * 100.0f;
+			_horizontal = moveVector.X * 100.0f;
+
+			AddMovementInput(forWard, moveVector.Y * _statComponent->GetSpeed());
+			AddMovementInput(right, moveVector.X * _statComponent->GetSpeed());
 		}
 	}
 }
@@ -92,19 +102,20 @@ void AMyCharacter::Move(const FInputActionValue& value)
 void AMyCharacter::Look(const FInputActionValue& value)
 {
 	if (_isAttack) return;
-	
+
 	FVector2D lookAxisVector = value.Get<FVector2D>();
 
 	if (Controller != nullptr)
 	{
 		AddControllerYawInput(lookAxisVector.X);
+		AddControllerPitchInput(-lookAxisVector.Y);
 	}
 }
 
 void AMyCharacter::JumpA(const FInputActionValue& value)
 {
 	if (_isAttack) return;
-	
+
 	bool isPress = value.Get<bool>();
 
 	if (isPress)
@@ -122,7 +133,10 @@ void AMyCharacter::Attack(const FInputActionValue& value)
 	if (isPress)
 	{
 		_isAttack = true;
+
+		_curAttackSection = (_curAttackSection + 1) % 3 + 1;
 		_animInstance->PlayAnimMontage();
+		_animInstance->JumpToSection(_curAttackSection);
 	}
 }
 
@@ -134,12 +148,81 @@ void AMyCharacter::TestDelegate()
 int32 AMyCharacter::TestDelegate2(int32 a, int32 b)
 {
 	UE_LOG(LogTemp, Log, TEXT("Attack Start Delegate Test, %d %d"), a, b);
-	
+
 	return -1;
 }
 
 void AMyCharacter::AttackEnd(UAnimMontage* Montage, bool bInterrupted)
 {
 	_isAttack = false;
+}
+
+void AMyCharacter::Attack_Hit()	
+{
+	// 이 함수를 호출한 객체의 이름
+	// auto name = GetName();
+	// UE_LOG(LogTemp, Error, TEXT("Attacker : %s"),*name);
+
+	FHitResult hitResult;
+	FCollisionQueryParams params(NAME_None, false, this);
+
+	float attackRange = 500.0f;
+	float attackRadius = 100.0f;
+
+	// 캡슐
+	// 1. 회전 - 쿼터니언을 앞방향으로
+	// 2. 캡슐의 radius, halfheight
+	// 3. 충돌처리와 DebugDraw
+	FVector forward = GetActorForwardVector();
+	FQuat quat = FQuat::FindBetweenVectors(FVector(0, 0, 1), forward);
+
+	FVector center = GetActorLocation() + forward * attackRange * 0.5f;
+	FVector start = GetActorLocation() + forward * attackRange * 0.5f;	// 충돌체의 시작중심
+	FVector end = GetActorLocation() + forward * attackRange * 0.5f;	// 충돌체의 끝중심
+
+	bool bResult = GetWorld()->SweepSingleByChannel
+	(
+		OUT hitResult,
+		start,
+		end,
+		quat,	// 쿼터니언
+		ECC_GameTraceChannel2,
+		FCollisionShape::MakeCapsule(attackRadius, attackRange * 0.5f),
+		params
+	);
+	
+	FColor drawColor = FColor::Green;
+	
+	if (bResult && hitResult.GetActor()->IsValidLowLevel())
+	{
+		drawColor = FColor::Red;
+		AMyCharacter* victim = Cast<AMyCharacter>(hitResult.GetActor());
+		if (victim)
+		{
+			FDamageEvent damageEvent = FDamageEvent();
+			victim->TakeDamage(_statComponent->GetAtk(), damageEvent, GetController(), this);
+		}
+	}
+	
+	//충돌체그리기
+	DrawDebugCapsule(GetWorld(), center, attackRange * 0.5f, attackRadius, quat, drawColor, false, 1.0f);
+
+	
+}
+
+void AMyCharacter::AddHp(float amount)
+{
+	_statComponent->AddCurHp(amount);
+}
+
+float AMyCharacter::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	_statComponent->AddCurHp(-Damage);
+
+	//FString attackName = DamageCauser->GetName();
+	//FString victimName = GetName();
+	//UE_LOG(LogTemp, Warning, TEXT("%s has taken %.2f from %s"),*victimName,  Damage, *attackName);
+	
+	return Damage;
 }
 
