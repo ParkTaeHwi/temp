@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -47,12 +45,19 @@ public:
 	float My_Vertical() { return _vertical; }
 	float My_Horizontal() { return _horizontal; }
 
-	
 	void Attack_Hit();
-
 	void AddHp(float amount);
 
-	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
+	virtual float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+
+	// 몬스터 처치 시 호출 (자식 클래스에서 오버라이드 가능)
+	virtual void OnMonsterKilled();
+
+	// 사망 처리 함수
+	void Die();
+
+	// 경험치 추가 및 레벨업 처리
+	void AddExp(float amount);
 
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input", meta = (AllowPrivateAccess = "true"))
@@ -82,9 +87,20 @@ private:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Animation", meta = (AllowPrivateAccess = "true"))
 	bool _isAttack;
 
-	int32 _curAttackSection = 1;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI", meta = (AllowPrivateAccess = "true"))
+	class UWidgetComponent* _hpBarWidget;
 
+	int32 _curAttackSection = 1;
 	float _vertical = 0.0f;
 	float _horizontal = 0.0f;
 
+	// 경험치 및 레벨 관련 변수 추가
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Stat", meta = (AllowPrivateAccess = "true"))
+	int32 _level = 1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Stat", meta = (AllowPrivateAccess = "true"))
+	float _exp = 0.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Stat", meta = (AllowPrivateAccess = "true"))
+	float _expToNextLevel = 100.0f;  // 레벨업까지 필요한 경험치
 };
